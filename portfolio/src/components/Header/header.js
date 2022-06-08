@@ -3,9 +3,8 @@ import Navigation from '../Navigation/navigation';
 function Header() {
     return(
         <header>
-                    
-        <h1>Timothy Knight</h1>
-        <Navigation/>
+            <h1>Timothy Knight</h1>
+            <Navigation/>
         </header>
     );
 }

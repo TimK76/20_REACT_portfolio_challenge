@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import './App.css';
+import About from './components/About/about';
+import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
 import Header from './components/Header/header';
+import Hero from './components/Hero/hero';
 import Navigation from './components/Navigation/navigation';
 import Project from './components/Project/project';
-import Hero from './components/Hero/hero';
-import './App.css';
 
 function App() {
   const [navPoints] = useState([
@@ -23,8 +25,11 @@ function App() {
   ])
   return (
     <div className="App">
-      <Header />
+      <Header><Navigation/></Header>
       <Hero />
+      <About/>
+      <Project/>
+      <Contact/>
       <Footer/>
     </div>
   );

@@ -1,8 +1,10 @@
+import React from 'react';
+
 const Hero = () => {
     return ( 
-        <section class="hero">
+        <section className="hero">
         
-        <img src="./assets/images/Selfie1.jpg" alt="Picutre of Timothy Knight" id="selfie"/>
+        <img src="" alt="Picutre of Timothy Knight" id="selfie"/>
        
         <h2 id="subtitle">De Profundis Liberati Sumus</h2>
         
