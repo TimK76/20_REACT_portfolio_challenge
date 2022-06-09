@@ -1,12 +1,15 @@
 import React from 'react';
-
+import MVP001 from '../../assets/images/MVP001.png';
+import Nutrition from '../../assets/images/nutrition_helper-004.png';
+import RunBuddy from '../../assets/images/Run-buddy-snap.png';
+import Placeholder from '../../assets/images/700x350.png';
 function Project() {
     return(
         <section>
             <aside className="title" id="work">Projects</aside>
             <article className="work-examples">
                 <figure>
-                    <img id="big" src="./assets/images/MVP001_main.jpeg" alt="Picture of landing page for Jamming-Blog application"/>
+                    <img id="big" src={MVP001} alt="Landing page for Jamming-Blog application"/>
                     <a href="https://github.com/samw281/jamming-blog" target="blank">
                         <div>                         
                         <h3>Jamming Blog</h3>
@@ -15,7 +18,7 @@ function Project() {
                     </a>
                 </figure>
                 <figure className="small">
-                    <img src="./assets/images/nutrition_helper-004.jpg" alt="Picture of Nutrition Helper Website"/>
+                    <img src={Nutrition} alt="Nutrition Helper Website"/>
                     <a href="https://chris-15.github.io/Nutrition-Helper-Project1/" target="blank">
                         <div>
                         <h3>Nutrition Helper</h3> 
@@ -24,7 +27,7 @@ function Project() {
                     </a>
                 </figure>
                 <figure className="small" >
-                    <img src="./assets/images/Run-buddy-snap.jpg" alt="Picutre of Run-Buddy Website"/>
+                    <img src={RunBuddy} alt="Run-Buddy Website"/>
                     <a href="https://timk76.github.io/run-buddy/" target="blank">
                         <div>
                         <h3>Run Buddy</h3> 
@@ -33,7 +36,7 @@ function Project() {
                     </a>    
                 </figure>
                 <figure className="small">
-                    <img  src="./assets/images/Placeholder.png" alt="placeholder image"/>
+                    <img  src={Placeholder} alt="placeholder"/>
                     <a href="" target="blank">
                         <div>
                             <h3>Placeholder</h3> 
@@ -42,7 +45,7 @@ function Project() {
                     </a>
                 </figure>
                 <figure className="small">
-                    <img src="./assets/images/Placeholder.png" alt="placeholder image"/> 
+                    <img src={Placeholder} alt="placeholder"/> 
                     <a href="" target="blank">
                         <div>
                         <h3>Placeholder</h3> 
