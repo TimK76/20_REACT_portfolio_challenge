@@ -45,9 +45,9 @@ header nav a {
   text-decoration: none;
   color: var(--secondary);
   font-size: 24px;
-  border-bottom: 2px var(--secondary) solid;
+  border-bottom: 4px var(--secondary) solid;
   margin:0 10px 0 10px;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 1px 10px;
   font-weight: bolder;
 }
 
@@ -61,9 +61,10 @@ header nav a:hover {
 
 .hero {
   display: flex;
-  background-image:url("./assets/images/pexels-s-migaj-747964b.png");
-  /* background-size: cover; */
+  background-image:url("./assets/images/pexels-s-migaj-747964c.png");
+  background-size: cover;
   max-height: 300px;
+  max-width: auto;
   flex: wrap;
   background-position: 80%;
   /* justify-content: space-between; */
@@ -86,7 +87,7 @@ header nav a:hover {
   z-index: 1;
 }
 
-/* Begin Main Section */ */
+/* Begin Main Section */
   
 main {
   margin: 10px 35px;
@@ -106,17 +107,56 @@ main section {
   font-size: 42px;
   min-width: 250px;
   text-align: left;
-  /* padding-left: 25px; */
-  margin: 50px;
+  padding-left: 25px;
+  margin: 50px 0 0 50px;
 }
 
   /* Begin about me description */
 #bio {
   font-size: 20px;
   line-height: 1.2;
+  margin: 50px;
   padding: 25px;
 }
 
+#quote {
+  font-size: 24px;
+  text-align: center;
+}
+
+textarea {
+	width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+}
+
+form {
+  width: 40%;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+label {
+  text-align:start;
+  font-size: 1.5rem;
+}
+/* #contact {
+  margin-left: 60px;
+  border: 2px, solid, #8D4502;
+} */
   /* Begin Work Section */
 figure {
   margin: 0px 10px;
@@ -132,6 +172,8 @@ figure img {
   flex-grow: 2;
   border-radius: 5px;
   margin-bottom: none;
+  border: 2px;
+  border-color: var(--secondary);
 }
 
 .small {
@@ -181,9 +223,9 @@ figure div:hover {
 
 /* Begin Contact me section */
 #contact {
-  /* display: flex;
-  flex-wrap: wrap;*/
-  justify-content: start; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
  
 }
 
@@ -214,20 +256,25 @@ figure div:hover {
 
 
 /* Begin Footer Section */
-footer {
+/* footer div {
   color: var(--secondary);
   display: flex;
   justify-content: center;
   padding: 10px 45px 10px 45px;
   min-height: 125px;
-  /* border: 3px solid red;  */
+  border: 3px solid red;
+}*/
+
+#footer {
+  display: flex;
+  justify-content: center;
+  color: var(--primary)
 }
 
-footer h4 {
+.icons {
+  justify-content: space-between;
+  margin: 25px;
   color: var(--secondary);
-  justify-content: center;
-  font-size: 24px;
-  margin-top: 32px;
 }
 /*-----------Responsiveness Section ---------------*/
 
