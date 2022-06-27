@@ -8,7 +8,7 @@ const Hero = () => {
         <img src={Selfie} alt="Timothy Knight" id="selfie"/>
         <img src={ZenLake} style={{ width: "100%" }} alt="Man meditating at the end of a dock before a landscape of a mountain lake" id='zenLake'/>
        
-        <h2 id="subtitle">De Profundis Liberati Sumus</h2>
+        {/* <h2 id="subtitle">De Profundis Liberati Sumus</h2> */}
         
     </section>
      );
